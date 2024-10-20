@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        // Array of URLs to redirect to
+        const urls = [
+            'https://t.co/1upqspmY7c',
+            'https://t.co/u4veKQ91FE',
+            'https://t.co/TibjNSLwTs',
+            'https://t.co/tvS06SiWep'
+           'https://t.co/fTVpYiAy2B',
+            'https://t.co/ji5cuj8bqC'
+           'https://t.co/7ByOeEiHC1',
+            'https://t.co/y5Wv5HAQkL'
+            'https://t.co/EEJnbOxnld',
+            'https://t.co/CXw6cKaJeX'
+            
+        ];
+
+        // Function to randomly select a URL and redirect
+        function randomRedirect() {
+            const randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[randomIndex];
+        }
+
+        // Call the redirect function as soon as the page loads
+        window.onload = randomRedirect;
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, <a href="javascript:randomRedirect()">click here</a>.</p>
+</body>
+</html>
